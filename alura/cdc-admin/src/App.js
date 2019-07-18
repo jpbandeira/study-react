@@ -33,7 +33,7 @@ class App extends Component {
           <span></span>
         </a>
         <div id="menu">
-          <button className="btn btn-primary links-menu" href="http://google.com">Company</button>
+          <button className="btn btn-primary links-menu" href="#">Company</button>
           <ul>
             <li className="links-menu"><a>Home</a></li>
             <li className="links-menu"><a>Autor</a></li>
@@ -56,15 +56,15 @@ class App extends Component {
               <form>
                 <label htmlFor="nome">Nome</label>
                 <div>
-                  <input id="nome" type="text" name="nome" value="" />
+                  <input id="nome" type="text" name="nome" value=""/>
                 </div>
                 <label htmlFor="email">Email</label>
                 <div>
-                  <input id="email" type="email" name="email" value="" />
+                  <input id="email" type="email" name="email" value=""/>
                 </div>
                 <label htmlFor="senha">Senha</label>
                 <div>
-                  <input id="senha" type="password" name="senha" />
+                  <input id="senha" type="password" name="senha"/>
                 </div>
                 <div className="pure-control-group">
                   <label></label>
@@ -97,7 +97,6 @@ class App extends Component {
             </tbody>
           </table>
         </div>
-
       </div>
     );
   }

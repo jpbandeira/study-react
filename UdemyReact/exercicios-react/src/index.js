@@ -5,6 +5,8 @@ import {ComponentA, ComponentB} from './componentes/SecondComponent'
 import FamiliaSilva from './componentes/FamiliaSilva'
 import Familia from './componentes/Familia'
 import Membro from './componentes/Membro'
+import Pai from './componentes/Pai'
+import ComponentClass from './componentes/ComponentClass'
 
 
 const element = document.getElementById('root')
@@ -22,11 +24,17 @@ ReactDOM.render(<div>
 
     <FamiliaSilva sobrenome = " Silva"/>
 
-<h1>***********************************************************************</h1> */}
+<h1>***********************************************************************</h1>
 
-     <Familia sobrenome=" Bandeira de Lima"> 
+{     <Familia sobrenome=" Bandeira de Lima"> 
         <Membro nome = "João Pedro" />
         <Membro nome = "Luiza" /> 
-    </Familia>
+    </Familia>}
+
+<h1>***********************************************************************</h1>
+
+<Pai></Pai> */}
+
+<ComponentClass valor1="Good Morning" valor2="Good Evening"></ComponentClass>
 
 </div>, element)

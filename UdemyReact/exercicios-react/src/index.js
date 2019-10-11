@@ -7,6 +7,7 @@ import Familia from './componentes/Familia'
 import Membro from './componentes/Membro'
 import Pai from './componentes/Pai'
 import ComponentClass from './componentes/ComponentClass'
+import Contador from './componentes/Contador'
 
 
 const element = document.getElementById('root')
@@ -35,6 +36,8 @@ ReactDOM.render(<div>
 
 <Pai></Pai> */}
 
-<ComponentClass valor1="Good Morning" valor2="Good Evening"></ComponentClass>
+{/* <ComponentClass valor1="Good Morning" valor2="Good Evening"></ComponentClass> */}
+
+<Contador numero={0}></Contador>
 
 </div>, element)

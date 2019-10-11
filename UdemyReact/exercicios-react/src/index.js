@@ -34,10 +34,10 @@ ReactDOM.render(<div>
 
 <h1>***********************************************************************</h1>
 
-<Pai></Pai> */}
+<Pai></Pai> 
 
-{/* <ComponentClass valor1="Good Morning" valor2="Good Evening"></ComponentClass> */}
+<ComponentClass valor1="Good Morning" valor2="Good Evening"></ComponentClass>
 
-<Contador numero={0}></Contador>
+<Contador numero={0}></Contador> */}
 
 </div>, element)

@@ -1,5 +1,5 @@
-const restfull = require('node-restful')
-const mongoose = restfull.mongoose
+const restful = require('node-restful')
+const mongoose = restful.mongoose
 
 const todoSchema = new mongoose.Schema({
     // Descrição da tarefa
@@ -8,4 +8,4 @@ const todoSchema = new mongoose.Schema({
     createdAt: {type: Date, default: Date.now}
 })
 
-module.exports = restfull.model('Todo', todoSchema)
+module.exports = restful.model('Todo', todoSchema)

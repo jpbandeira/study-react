@@ -1,0 +1,33 @@
+.Menu {
+    display: flex;
+    flex-basis: 250px;
+    
+    background-color: #1e90ff;
+}
+
+.Menu nav {
+    flex-grow: 1;    
+}
+
+.Menu ul {
+    /*list-style -> remove estilos da lista, como os pontos...*/
+    list-style: none;
+    padding: 0;
+}
+
+.Menu li {
+    display: flex;
+}
+
+.Menu li a {
+    margin-bottom: 10px;
+    padding: 10px;
+    text-decoration: none;
+    color: #fff;
+
+    font-size: 1.5rem;
+}
+
+.Menu li a:hover {
+    background: #00000030;
+}

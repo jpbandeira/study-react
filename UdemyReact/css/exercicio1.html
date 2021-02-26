@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            border: solid 5px dodgerblue;
+            /* font-size: 40px; */
+            margin: 5px;
+        }
+
+        .big {
+            font-size: 1.5em;
+        }
+
+        .flex-container {
+            /*Flex box é uma tecnologia de deixa o template unidimenssional, tendo que esconder o eixo principal
+            , linha ou coluna. O padrão é row*/
+            display: flex;
+            flex-direction: row;
+
+            /*
+            Define a orientação do template como coluna, mas de forma revertida, invertendo a posição
+            de cada elemento na direção de coluna            
+            
+            flex-direction: column-reverse;
+            */
+
+            /*
+            Define a orientação do template em linha, mas invertendo o ponto incial dos elementos
+            , que por padrão inicia pela esquerda e com esta propriedade fica invertido para direita
+            
+            flex-direction: row-reverse;
+            */
+
+            /*
+            A propriedade flex-wrap faz com que ocorra a quebra de linha respeitando as dimenssões 
+            do layout definido. Como exemplo, passando a propriedade abaixo, o conteiner tem uma largura
+            fixa em 10%, ao chegar no limite do container, ocorre a quebra de linha nos elementos                        
+            width: 10%;
+            */
+            flex-wrap: wrap;
+             /*
+                A propriedade justify-content é utilziada para justificar o conteudo a partir de uma
+                determinada posição.
+                Dependendo da orientação utilizada, flex-start e flex-end justifica no inicio ou final.
+                O valor center justifica no meio do container: .
+                O valor space-around justifica os elementos com um espaço de tamanho igual
+                ao redor de cada um.
+                O valor space-between justifica os elementos com um espaço entre eles
+                e não ao redor.
+
+             */    
+            justify-content: flex-start;
+            justify-content: flex-end;
+            justify-content: center;
+            justify-content: space-around;
+            justify-content: space-between;
+
+            /*
+                A propriedade align-items faz o alinhamento dos itens.
+            */
+
+            align-items: baseline;
+            align-items: flex-start;
+            align-items: flex-end;
+            align-items: center;
+
+            /*
+                A propriedade align-content faz o alinhamento dos conteudo do container.                
+            */
+            /* Alinha o conteudo no inicio da orientação definida */
+            align-content: flex-start;
+            /* Alinha o conteudo no final da orientação definida */
+            align-content: flex-end;
+            /* Alinha o conteudo no centro da orientação */
+            align-content: center;
+            /* Alinha o conteudo com um espaço igual ao redor */
+            align-content: space-around;
+            /* Alinha o conteudo com um espaço igual entre cada um */
+            align-content: space-between;
+
+            /* 
+                A propriedade flex-basis indica qual a largura de um elemento dentro de um container
+                no sentido da orientação definida, se for linha aumenta no sentido da linha
+                e se for coluna aumenta no sentido da coluna
+             */
+            flex-basis: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="flex-container">
+        <div>1</div>
+        <div>2</div>
+        <div class="big">3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+        <div>7</div>
+        <div>8</div>
+        <div>9</div>
+        <div>10</div>
+    </div>
+</body>
+
+</html>

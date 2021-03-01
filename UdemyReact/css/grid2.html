@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        html,
+        body {
+            margin: 2px;
+            height: calc(100% - 40px);
+            background-color: lightgray;
+        }
+
+        div {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: solid 5px dodgerblue;
+            background: #fff;
+        }
+
+        body {
+            display: grid;
+            /* É possivel indicar nomes para cada linha e cada coluna */
+            grid-template-columns: [inicio] 1fr [meio-esquerdo] 1fr [meio-direito] 1fr [fim];
+            grid-template-rows: repeat(3, 1fr);
+             /* A propriedade gap indicar espaçamento entre colunas e linhas */  
+            grid-column-gap: 20px;
+            grid-row-gap: 20px;
+            /* Utilizando a propriedade gri-gap para indicar espaçamento para linha e culuna em uma unica propriedade */
+            grid-gap: 10px 20px;
+            /* Ao passar somento um valor, o mesmo vai ser aplicado para linha e coluna */
+            grid-gap: 20px;
+        }
+
+        .d1 {
+            grid-column-start: inicio;
+            grid-column-end: meio-direito;
+            /* Propriedade redizida para indicar inicio e fim de linha ou coluna */
+            grid-column: inicio / meio-direito;
+            /* 
+                Utilizando a propriedade grid-area é possivel indicar começo e fim de linha e coluna 
+                ordem de valores: row-start column-start row-end column-end
+            */
+            grid-area: 1 / inicio / 3 / meio-esquerdo;                     
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="d1">1</div>
+    <div class="d2">2</div>
+    <div class="d3">3</div>
+    <div class="d4">4</div>
+    <div class="d5">5</div>
+    <div class="d6">6</div>
+</body>
+
+</html>

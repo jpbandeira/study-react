@@ -42,8 +42,33 @@
              grid-template-columns: 3fr 6fr 3fr;
              /* Aplicando para linhas onde pode ser definido o tamanho que cada linha ocupa*/
              grid-template-rows: 25% 15% 12.5% 1fr;
+            /* Ao definir somente o tamanho de duas linhas, as outras vão usar o restante da tela de forma dividida */
+            grid-template-rows: 100px 1fr;
 
+            grid-template-rows: 1fr 1fr 1fr 1fr;
+        }
 
+        .d8 {
+            /* 
+               grid-column-start e grid-column-end são utilziados para indicar o começo de uma coluna e o seu termino
+               Pode ser utilizadas as duas formas abaixo para indicar onde terminar, tendo o mesmo resultado
+               Començando na coluda 2 e terminando na 4 || terminando com uma expansão de duas casas
+             */
+            grid-column-start: 2;            
+            grid-column-end: 4;
+            grid-column-end: span 2;
+            /* 
+                grid-row-start e grid-row-end são utilizados para indicar onde começa e onde termina a linha do elemento 
+                Começando na linha 3 e terminando na linha 5
+            */
+            grid-row-start: 3;
+            grid-row-end: 5;
+            grid-row-end: span 2;
+            /* 
+                No final esse exemplo ocupa duas casas na coluna e duas na linha 
+                É possivel não indicar onde começa a linha ou coluna, ficando mais dinamico indicando somente onde termina, para se adaptar a
+                qualquer posição que esteja.
+            */
         }
     </style>
 </head>

@@ -11,7 +11,7 @@ const Menu = props => (
                     <Link to='/'>Home</Link>
                 </li>
                 <li>
-                    <Link to='/sobre'>Sobre</Link>
+                    <Link to='/sobre/first/second'>Sobre</Link>
                 </li>
             </ul>
         </nav>

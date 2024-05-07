@@ -8,7 +8,7 @@ import NotFound from '../../views/examples/NotFound'
 const Content = props => (
     <main className='content'>
         <Switch>            
-            <Route path='/sobre/:param'>
+            <Route path='/sobre/:param/:param2'>
                 <Sobre/>
             </Route>
             <Route path='/sobre'>

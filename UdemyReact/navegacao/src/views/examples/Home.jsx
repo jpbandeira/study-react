@@ -1,6 +1,5 @@
 import React from 'react'
 
-
 const Home = props => (
     <div className='home'>
         <h1>Inicio</h1>
